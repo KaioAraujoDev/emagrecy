@@ -1,0 +1,94 @@
+#how-it-works{
+    padding: 13.06rem 0 14.4rem 0;
+    background: linear-gradient(180deg, rgba(255, 102, 0, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+
+    h2{
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 3.125rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 3.625rem; /* 116% */
+        margin-bottom: 5.13rem;
+    }
+    ul.list-questions{
+        display: grid;
+        gap:8.37rem;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3.12rem;
+
+            .div-img{
+                img{
+                    width: 15.375rem;
+                }
+            }
+            .description{
+                h3{
+                    color: #F60;
+                    font-family: Inter;
+                    font-size: 2.375rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 3.625rem; /* 152.632% */
+                    margin-bottom: 1.06rem;
+                }
+                p{
+                    width: 63.75rem;
+                    color: #151515;
+                    font-family: Inter;
+                    font-size: 1.5625rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 2.125rem; /* 136% */
+
+                }
+            }
+        }
+        li:nth-child(3){
+            
+            .description{
+                p{
+                    margin-bottom: 2.5rem;
+                }
+                .details{
+                    border-radius: 0.9375rem;
+                    border: 1px solid #F60;
+                    background: #FFF;
+                    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.08);
+                    padding: 2.25rem 0 2.87rem 4.19rem;
+                    width: 63.1875rem;
+
+                    h4{
+                        color: #151515;
+                        font-family: Inter;
+                        font-size: 1.5625rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 2.125rem; /* 136% */
+                        margin-bottom: 0.5rem;
+                    }
+                    ul{
+                        li{
+                            gap: 0.75rem;
+                            p{
+                                color: #151515;
+                                font-family: Inter;
+                                font-size: 1.5625rem;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 2.8125rem; /* 180% */
+                                margin-bottom: initial;
+                            }
+
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
