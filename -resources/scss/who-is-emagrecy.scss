@@ -1,0 +1,235 @@
+#who-is-emagrecy{
+    background-image: url(../../img/fundo-who-is-emagrecy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10.4rem 0 8.29rem 0;
+    
+    @media(max-width:767px){
+        padding: 5.4rem 0px 3.29rem;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4.75rem;
+        margin: 0 auto 4.31rem 0;
+
+        @media(max-width:767px){
+            flex-direction: column;
+            gap: 1.75rem;
+            margin: 0 auto 3rem 0;
+        }
+        .div-img{
+            img{
+                width: 29.82831rem;
+
+                @media(max-width:767px){
+                    width: 15.82831rem;
+                }
+            }
+        }
+        .title{
+            h2{
+                color: #000;
+                font-family: Inter;
+                font-size: 2.34131rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 2.71594rem; /* 116% */
+                margin-bottom: 1.25rem;
+
+                @media(max-width:767px){
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                span{
+                    color: #F60;
+                }
+            }
+            p{
+                color: #575757;
+                font-family: Inter;
+                font-size: 1.17063rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.59206rem; /* 136% */
+                width: 26.73775rem;
+
+                @media(max-width:767px){
+                    font-size: .75rem;
+                    line-height: 1.15rem;
+                    width: 14.73775rem;
+                }
+            }
+            p:not(p:last-child){
+                margin-bottom: 1.35rem;
+            }
+        }
+    }
+    .card-mission{
+        border-radius: 0.9375rem;
+        border: 1px solid #F60;
+        background: #FFF;
+        box-shadow: 0px 4px 35px 0px rgba(0,0,0,0.08);
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 0.94rem;
+        padding: 2.39rem 0 1.5rem 0.06rem;
+        box-sizing: border-box;
+        width: 61.95106rem;
+        margin: 0 auto 4.13rem auto;
+        height: 14.282rem;
+
+        @media(max-width:767px){
+            width: 16.95106rem;
+            margin: 0 auto 2.13rem auto;
+            height: 12.5rem;
+            padding: 1.25rem 0 0.7rem 0.5rem;
+            border-radius: .65rem;
+        }
+        .div-img{
+            img{
+                width: 2.85638rem;
+                @media(max-width:767px){
+                    width: 1.25rem;
+                }
+            }
+        }
+        p{
+            width: 54.974rem;
+            color: #272727;
+            font-family: Inter;
+            font-size: 1.40481rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.10719rem; /* 150% */
+
+            @media(max-width:767px){
+                width: 13.974rem;
+                font-size: 0.65rem;
+                line-height: 1.10719rem;
+
+            }
+            strong{
+                font-weight: 700;
+            }
+        }
+    }
+    p.mission-text{
+        color: #575757;
+        font-family: Inter;
+        font-size: 1.17063rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.59206rem; /* 136% */
+        max-width: 62rem;
+        margin: 0 auto 3rem;
+
+        @media(max-width:767px){
+            max-width: 17rem;
+            font-size: .75rem;
+            line-height: 1.25rem;
+            margin: 0 auto 2rem;
+        }
+    }
+    .cards-benefits{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.98rem;
+        margin-bottom: 7.16rem;
+        
+        @media(max-width:767px){
+            flex-direction: column;
+            margin-bottom: 4rem;
+        }
+
+        .card{
+            width: 19.99481rem;
+            height: 18.21538rem;
+            border-radius: 0.70238rem;
+            border: 0.749px solid #F60;
+            background: #FFF;
+            box-shadow: 0px 2.997px 26.223px 0px rgba(0, 0, 0, 0.08);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: .98rem;
+
+            @media(max-width:767px){
+                width: 13.99481rem;
+                height: 11.21538rem;
+                border-radius: 0.65rem;
+                gap: 0.5rem;
+            }
+            .div-img{
+                height: calc(4.02rem + 0.61rem);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1.85rem;
+                @media(max-width:767px){
+                    margin-top: initial;
+                    height: 4rem;
+                }
+                img{
+                    width: 4.68263rem;
+                    @media(max-width:767px){
+                        width: 2.68263rem;
+                        height: auto;
+                       
+                    }
+                }
+            }
+            p{
+                width: 16.81063rem;
+                height: 8.24144rem;
+                color: #F60;
+                text-align: center;
+                font-family: Inter;
+                font-size: 1.63894rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.96669rem; /* 120% */
+
+                @media(max-width:767px){
+                    font-size: .85rem;
+                    line-height: 1.35rem;
+                    width: 10rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+    a.button{
+        width: 19.49269rem;
+        height: 4.63581rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.37463rem;
+        background: linear-gradient(180deg, #04CA0C 99.99%, #F60 100%);
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 1.68575rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.57544rem; /* 152.778% */
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+        margin: 0 auto;
+        @media(max-width:767px){
+            font-size: 1.05rem;
+            line-height: 1.75rem;
+            width: 13.5rem;
+            height: 3.25rem;
+        }
+
+    }
+    a:hover{
+        opacity: .75;
+    }
+}
