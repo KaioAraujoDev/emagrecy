@@ -1,0 +1,146 @@
+#plans{
+  background-image: url(../../img/background-plans.png);
+  background-repeat: no-repeat;
+  background-size: cover;  
+  padding: 9.4rem 10% 9.86rem 10%;
+  .header-plans{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto 5.2rem auto;
+    gap: 2.58rem;
+    .plan{
+        width: 12.64781rem;
+        height: 5.05913rem;
+        color: #F87C0A;
+        text-align: center;
+        font-family: Inter;
+        font-size: 1.87306rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: 1.5px solid #FF4D00;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF;
+    }
+    .plan.life{
+        position: relative;
+
+        img{
+            position: absolute;
+            right: -1.5rem;
+            bottom: -2rem;
+        }
+    }
+  }
+  .accordions-benefits{
+    .accordion{
+        width: 100%;
+        .header{
+            height: 5.94694rem;
+            border: 1.498px solid #FF4D00;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 1.25rem;
+            background: #FFF;
+            p{
+                color: #F87C0A;
+                text-align: start;
+                font-family: Inter;
+                font-size: 1.73256rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                width: 20rem;
+
+                strong{
+                    font-weight: 700;
+                }
+            }
+            .div-atributes{
+                display: flex;
+                gap: 11.7rem;
+                position: relative;
+                right: 5rem;
+            }
+        }
+        .content{
+            padding: 1rem;
+            box-sizing: border-box;
+            p{
+                color: #575757;
+                font-family: Inter;
+                font-size: 1.17063rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.59206rem; /* 136% */
+
+                span.weight-mini{
+                    font-weight: 200;
+                }
+            }
+            p.tab{
+                margin-left: 1em;
+            }
+        }
+    }
+    .accordion.medic{
+        .header{
+            p{
+                width: 26rem;
+            }
+        }
+    }
+  }
+  .plans-pag{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.29rem;
+    .plan{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        p.vezes{
+            color: #F87C0A;
+            text-align: center;
+            font-family: Inter;
+            font-size: 2.24769rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: .5rem;
+        }
+        p.price{
+            color: #04CA0C;
+            font-family: Inter;
+            font-size: 2.99688rem;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-bottom: 1rem;
+        }
+        a{
+            display: block;
+            width: 13.18644rem;
+            height: 2.71594rem;
+            border-radius: 0.37463rem;
+            background: linear-gradient(180deg, #04CA0C 85.67%, #09F112 99.99%, #F60 100%);
+            transition: all 200ms ease-in-out;
+            color: #FFF;
+            text-align: center;
+            font-family: Inter;
+            font-size: 1.26431rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2.57544rem; /* 203.704% */
+            text-decoration: none;
+        }
+        a:hover{
+            opacity: 0.75;
+        }
+    }
+  }
+}
