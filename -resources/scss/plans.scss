@@ -68,6 +68,8 @@
     .accordion{
         width: 100%;
         z-index: 2;
+        transition: opacity 200ms ease-in-out;
+
         .header{
             height: 5.94694rem;
             border: 1.498px solid #FF4D00;
@@ -178,6 +180,10 @@
             }
         }
     }
+    .accordion:hover{
+        opacity: .7;
+    }
+    
   }
   .plans-pag{
     display: flex;

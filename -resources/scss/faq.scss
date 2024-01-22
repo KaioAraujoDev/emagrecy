@@ -22,6 +22,7 @@
     .accordions-faq{
         .accordion{
             margin-bottom:1.87rem;
+            transition: opacity 200ms ease-in-out;
             .header{
                 display: flex;
                 justify-content: space-between;
@@ -99,6 +100,9 @@
                 pointer-events: none;
             }
 
+        }
+        .accordion:hover{
+            opacity: .7;
         }
       
     }
