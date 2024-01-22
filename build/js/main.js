@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var accordionsBenefits=document.querySelectorAll(".accordion-benefits .accordion");console.log(accordionsBenefits),accordionsBenefits.forEach(function(o){return console.log(o)});

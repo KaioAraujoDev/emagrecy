@@ -230,7 +230,7 @@
 						<img src="./img/icon-checked.svg" alt="">
 					</div>
 				</div>
-				<div class="content">
+				<div class="content" data-active="false">
 					<p>
 						- Suporte online via whatsapp durante todo o tratamento <br>
 						- Agendamento de consultas online <br>
@@ -253,7 +253,7 @@
 						<img src="./img/icon-checked.svg" alt="">
 					</div>
 				</div>
-				<div class="content">
+				<div class="content" data-active="false">
 					<p>
 						- Consulta com o Nútrologo para definir: <br>
 					</p>
@@ -274,7 +274,7 @@
 						<img src="./img/icon-checked.svg" alt="">
 					</div>
 				</div>
-				<div class="content">
+				<div class="content" data-active="false">
 					<p>
 						- Consulta com o Nutricionista para definir: <br>
 					</p>
@@ -294,7 +294,7 @@
 						<img src="./img/icon-checked.svg" alt="">
 					</div>
 				</div>
-				<div class="content">
+				<div class="content" data-active="false">
 					<p>
 						- Orientação para aprimoramento ou inclusão de <br>
 						atividades físicas, para que sejam prazerosas e <br>
@@ -311,7 +311,7 @@
 						<img src="./img/icon-checked.svg" alt="">
 					</div>
 				</div>
-				<div class="content">
+				<div class="content" data-active="false">
 					<p>
 						- Receita médica baseada nos protocolos mais atuais e <br>
 						eficientes para transformação e aprimoramento físico <br>
@@ -330,7 +330,7 @@
 						<img src="./img/icon-checked.svg" alt="">
 					</div>
 				</div>
-				<div class="content">
+				<div class="content" data-active="false">
 					<p>
 						- Aplicação de soros e injetáveis mais recentes e <br>
 						eficientes para transformação e aprimoramento físico.¹ <br><br>
@@ -361,6 +361,120 @@
 			</div>
 		</div>
 	</section>
-	<script type="text/javascript" src="./build/js/main.js?v=1"></script>
+	<section id="faq">
+		<h2>FAQ - Perguntas frequentes</h2>
+		<div class="accordions-faq">
+			<div class="accordion">
+				<div class="header">
+					<p>Após a compra recebo acesso a alguma plataforma?</p>
+					<span class="arrow">
+						v
+					</span>
+				</div>
+				<div class="content" data-active="false">
+					<p>- Após a confirmação de pagamento você será direcionado ao nosso Emagrecy Concierge via WhatsApp, lá será feita toda a assessoria, agendamentos, encaminhamentos etc. Os links adicionais serão enviados para você via WhatsApp conforme à necessidade.</p>
+				</div>
+			</div>
+			<div class="accordion">
+				<div class="header">
+					<p>Como funcionarão as consultas?</p>
+					<span class="arrow">
+						v
+					</span>
+				</div>
+				<div class="content" data-active="false">
+					<p>- Através do Emagrecy Concierge via WhatsApp agendaremos sua consulta, ela acontecerá online como uma reunião através de um link google meet, o médico terá acesso aos seus dados e exames de acordo com cada situação.</p>
+				</div>
+			</div>
+			<div class="accordion">
+				<div class="header">
+					<p>Para quais cidades se aplicam a coleta de exame?</p>
+					<span class="arrow">
+						v
+					</span>
+				</div>
+				<div class="content" data-active="false">
+					<p>- Os exames serão feitos através de um laboratório parceiro, pré-selecionado pelo time técnico da Emagrecy, o parceiro atende em todos os estados do Brasil, no entanto é necessário consultar se o endereço está na zona de cobertura. Caso não haja cobertura, o paciente pode usar qualquer laboratório da região.</p>
+				</div>
+			</div>
+			<div class="accordion">
+				<div class="header">
+					<p>Para quais cidades se aplicam a aplicação de injetáveis?</p>
+					<span class="arrow">
+						v
+					</span>
+				</div>
+				<div class="content" data-active="false">
+					<p>- Os injetáveis acontecem somente em São Paulo, na região do Itaim Bibi. Caso a região não atenda o paciente, ele poderá contratar por conta um serviço de aplicação na região desejada.</p>
+				</div>
+			</div>
+			<div class="accordion">
+				<div class="header">
+					<p>Os medicamentos são enviados para todo o Brasil?</p>
+					<span class="arrow">
+						v
+					</span>
+				</div>
+				<div class="content" data-active="false">
+					<p>- Sim</p>
+				</div>
+			</div>
+			<div class="accordion">
+				<div class="header">
+					<p>Vocês garantem os resultados?</p>
+					<span class="arrow">
+						v
+					</span>
+				</div>
+				<div class="content" data-active="false">
+					<p>- A equipe técnica do Emagrecy garante cientificamente a eficiência dos protocolos e planos de tratamento. O cumprimento do tratamento é de responsabilidade do paciente, para que haja resultados relevantes.</p>
+				</div>
+			</div>
+			<div class="accordion">
+				<div class="header">
+					<p>Outras dúvidas…</p>
+					<span class="arrow">
+						v
+					</span>
+				</div>
+				<div class="content" data-active="false">
+					<p><a href="https://wa.me/5511975486763">Clique no link</a> e fale conosco via whatsapp</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <script type="text/javascript" src="./build/js/main.js"></script> -->
+	<script>
+		const accordionsBenefits = document.querySelectorAll('.accordions-benefits .accordion');
+		const accordionsFaq = document.querySelectorAll('.accordions-faq .accordion');
+		
+		const handleAccordions = (accordions) =>{
+			accordions.forEach(accordion => {
+				accordion.addEventListener('click',(event)=>{
+					const contentTarget = event.currentTarget.children[1];
+					const contentHeight = contentTarget.scrollHeight;
+					
+					if(contentTarget.dataset.active === "false" ){
+						
+						contentTarget.style.height = contentHeight + "px";
+						contentTarget.style.opacity = 1;
+						contentTarget.dataset.active = "true";
+						
+					}else if(contentTarget.dataset.active === "true"){
+						
+						contentTarget.style.height = "0px";
+						contentTarget.style.opacity = 0;
+						contentTarget.dataset.active = "false";
+						
+					}
+					
+					
+				})});
+		}
+		
+		handleAccordions(accordionsBenefits);
+		handleAccordions(accordionsFaq);
+
+	</script>
 </body>
 </html>

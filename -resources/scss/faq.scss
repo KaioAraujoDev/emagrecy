@@ -1,0 +1,105 @@
+#faq{
+    padding: 9.22rem 10% 9.04rem 10%;
+    background-color: #EEE;
+
+    @media(max-width:767px){
+        padding: 4.22rem 5% 4.04rem 5%;
+    }
+    h2{
+        color: #F60;
+        font-family: Inter;
+        font-size: 2.34131rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 2.71594rem; /* 116% */
+        margin-bottom: 2rem;
+
+        @media(max-width:767px){
+            font-size: 1.35rem;
+            text-align: center;
+        }
+    }
+    .accordions-faq{
+        .accordion{
+            margin-bottom:1.87rem;
+            .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #F60;
+                padding: 1.55rem 3.28rem 1.59rem 2.01rem;
+                cursor: pointer;
+                z-index: 2;
+
+                @media(max-width:767px){
+                    padding: .85rem 1rem .85rem 1rem;
+                }
+                p{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 1.73256rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+
+                    @media(max-width:767px){
+                        font-size: .75rem;
+                        max-width: 14rem;
+                        line-height: .95rem;
+                    }
+                }
+                span{
+                    color: #FFF;
+                    font-family: Inter;
+                    font-size: 2.24769rem;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+
+                    @media(max-width:767px){
+                        font-size: 1.15rem;
+                    }
+
+                }
+            }
+            .content{
+                // padding: 1rem;
+                box-sizing: content-box;
+                height: 0;
+                opacity: 0;
+                transition: height 200ms ease-in-out , opacity 200ms ease-in-out, padding 200ms ease-in-out;
+                
+                p{
+                    color: #575757;
+                    font-family: Inter;
+                    font-size: 1.17063rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.59206rem; /* 136% */
+                    width: 90%;
+                    @media(max-width:1024px){          
+                        font-size: .75rem;
+                        line-height: 1.25rem;
+                    }
+                    span.weight-mini{
+                        font-weight: 200;
+                    }
+                }
+                p.tab{
+                    margin-left: 1em;
+                }
+            }
+            .content[data-active="true"]{
+                padding: 1rem;
+                @media(max-width:1024px){
+                    padding: 1rem 0 2.25rem 1rem;
+                }
+            }
+            .content[data-active="false"]{
+                pointer-events: none;
+            }
+
+        }
+      
+    }
+}

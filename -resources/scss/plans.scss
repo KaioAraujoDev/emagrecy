@@ -63,11 +63,11 @@
 
     @media(max-width:1024px){
         gap: 1.25rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
     .accordion{
         width: 100%;
-    
+        z-index: 2;
         .header{
             height: 5.94694rem;
             border: 1.498px solid #FF4D00;
@@ -127,14 +127,11 @@
         }
         .content{
             padding: 0;
-            // padding: 1rem;
-            box-sizing: border-box;
+            box-sizing: content-box;
             height: 0;
             opacity: 0;
-
-            @media(max-width:1024px){
-                padding: 0.75rem;
-            }
+            transition: height 200ms ease-in-out , opacity 200ms ease-in-out, padding 200ms ease-in-out;
+           
             p{
                 color: #575757;
                 font-family: Inter;
@@ -155,6 +152,21 @@
                 margin-left: 1em;
             }
         }
+        .content[data-active="true"]{
+            padding: 1rem;
+            @media(max-width:1024px){
+                padding: 1rem 0 2.25rem 1rem;
+            }
+        }
+        .content[data-active="false"]{
+            pointer-events: none;
+        }
+        
+        // .open{
+        //     max-height: 20rem;
+        //     opacity: 1;
+        //     padding: 1rem;
+        // }
     }
     .accordion.medic{
         .header{
