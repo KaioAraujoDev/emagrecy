@@ -31,6 +31,7 @@
                 padding: 1.55rem 3.28rem 1.59rem 2.01rem;
                 cursor: pointer;
                 z-index: 2;
+                transition: opacity 200ms ease-in-out;
 
                 @media(max-width:767px){
                     padding: .85rem 1rem .85rem 1rem;
@@ -63,6 +64,10 @@
 
                 }
             }
+            .header:hover{
+                opacity: .7;
+            }
+
             .content{
                 // padding: 1rem;
                 box-sizing: content-box;
@@ -101,9 +106,7 @@
             }
 
         }
-        .accordion:hover{
-            opacity: .7;
-        }
+       
       
     }
 }

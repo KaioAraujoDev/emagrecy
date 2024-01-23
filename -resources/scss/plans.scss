@@ -68,7 +68,7 @@
     .accordion{
         width: 100%;
         z-index: 2;
-        transition: opacity 200ms ease-in-out;
+      
 
         .header{
             height: 5.94694rem;
@@ -79,7 +79,8 @@
             padding-left: 1.25rem;
             background: #FFF;
             cursor: pointer;
-
+            transition: opacity 200ms ease-in-out;
+            
             @media(max-width:1024px){
                 flex-direction: column;
                 justify-content: center;
@@ -126,6 +127,9 @@
                 }
 
             }
+        }
+        .header:hover{
+            opacity: .7;
         }
         .content{
             padding: 0;
@@ -180,10 +184,8 @@
             }
         }
     }
-    .accordion:hover{
-        opacity: .7;
-    }
     
+
   }
   .plans-pag{
     display: flex;
